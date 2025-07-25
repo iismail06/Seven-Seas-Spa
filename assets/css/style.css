@@ -38,7 +38,7 @@ body {
     height: 400px;
 }
 .btn.contact-btn {
-    background-color: #2b3f03; /* Match wellness tip icon */
+    background-color: #6b8e23; /* Olive green-brownish */
     color: #fff;
     border: none;
 }
@@ -75,17 +75,16 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
+/* Footer social links color */
+.footer-social {
+    color: #FFEBD4 !important;
+}
+/* Footer background and text color */
+.footer {
+    background-color: #6F4E37;
+    color: #FFEBD4;
+}
 
-@media (max-width: 767px) {
-  .services-section .card {
-    min-height: 350px;
-  }
-}
-@media (min-width: 768px) {
-  .services-section .card {
-    min-height: 400px;
-  }
-}
 
 /* Responsive bulleted list for wellness tips */
 
@@ -110,22 +109,62 @@ body {
     border: 3px solid #2b3f03;
 }
 
-/* Footer styles */
+/* Contact page styles */
+.contact-section {
+    background: #f9f6f2;
+    padding: 3rem 0;
+}
+.contact-section h2 {
+    color: #6F4E37;
+    font-family: 'Handlee', cursive;
+    margin-bottom: 2rem;
+}
+.contact-form {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(111, 78, 55, 0.08);
+    padding: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.contact-form label {
+    color: #3b2f2f;
+}
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #6F4E37;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contact-form .btn {
+    background-color: #6b8e23;
+    color: #fff;
+    border: none;
+}
+.contact-form .btn:hover {
+    background-color: #145c32;
+}
+.contact-info {
+    color: #3b2f2f;
+    margin-top: 2rem;
+}
 .footer a:hover {
     color: #fff !important;
 }
-/* Footer social links color */
-.footer-social {
-    color: #FFEBD4 !important;
-}
-/* Footer background and text color */
-.footer {
-    background-color: #6F4E37;
-    color: #FFEBD4;
-}
+/* media queries */
 @media (max-width: 767px) {
     /* Responsive tweaks for wellness tips cards */
     .wellness-tip-card {
         padding: 1.5rem 1rem;
     }
+    /* Ensure service cards are responsive */
+    .services-section .card {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+  .services-section .card {
+    min-height: 400px;
+  }
 }
