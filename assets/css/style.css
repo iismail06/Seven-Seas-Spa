@@ -190,6 +190,30 @@ body {
 .footer a:hover {
     color: #fff !important;
 }
+/* Subtle hover animations for wellness tips cards */
+.wellness-tip-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.wellness-tip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Blog Section Icon Styles */
+.blog-section .card-body i {
+    font-size: 3rem;
+    color: #6b8e23;
+}
+/* Updated button styles for Wellness Blog Section */
+.blog-section .btn-primary {
+    background-color: #6b8e23; /* Same green as hero section */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-section .btn-primary:hover {
+    background-color: #556b2f; /* Darker green on hover */
+    transform: scale(1.05);
+}
 /* media queries */
 @media (max-width: 767px) {
     /* Responsive tweaks for wellness tips cards */
@@ -208,11 +232,3 @@ body {
   }
 }
 
-/* Subtle hover animations for wellness tips cards */
-.wellness-tip-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.wellness-tip-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
