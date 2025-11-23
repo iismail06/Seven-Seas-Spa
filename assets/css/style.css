@@ -1,13 +1,17 @@
-/* Navbar */
-main {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+
+
+
 body {
     background-color: #fff;
 }
+/* Navbar */
 .navbar-nav .nav-link {
     color: #3b2f2f;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #6b8e23; /* Olive green-brownish */
 }
 
 .navbar {
@@ -41,9 +45,15 @@ body {
     background-color: #6b8e23; /* Olive green-brownish */
     color: #fff;
     border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Removed excessive margin-top, will add spacing to parent instead */
+.btn.contact-btn:hover {
+    background-color: #556b2f; /* Darker olive green */
+    transform: scale(1.05);
+}
+
+
 /* Move button down by adding margin to parent container */
 .hero-section .col-md-8 {
     margin-top: 10rem;
@@ -68,6 +78,11 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .services-section .card-body {
     flex: 1 1 auto;
